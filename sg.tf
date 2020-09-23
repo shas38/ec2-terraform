@@ -10,7 +10,7 @@ resource "aws_security_group" "allow_http" {
         protocol =   "tcp"
         cidr_blocks =  ["0.0.0.0/0"]
     }
-    // Outgoing traffic Allow all port all protocol
+    // Outgoing traffic Allow all port all protocol 
     egress {
         from_port   = 0
         to_port     = 0
