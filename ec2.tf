@@ -1,3 +1,4 @@
+// ec2 resource defination
 resource "aws_instance" "webServer" {
     ami           = "ami-0f158b0f26f18e619" //Ubuntu Server 20.04 LTS
     instance_type = "t2.micro"
