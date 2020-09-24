@@ -29,6 +29,7 @@ Instruction for setting up Terraform: https://learn.hashicorp.com/tutorials/terr
 7. Once the deployment is complete the console will output the public IP address and DNS of the EC2 service.
 8. You can view the application using either the public IP address or the DNS.
 9. Please note it takes up to <b>five minutes</b> for the deployment of the application to complete. Hence, you might have to wait even if the EC2 deployment is complete.
+
 <img src="images/terraform.PNG">
 
 ## Design Choices
@@ -40,3 +41,5 @@ Instruction for setting up Terraform: https://learn.hashicorp.com/tutorials/terr
 5. When adding permissions to the IAM user follow the principle of least privilege so that the IAM user only has the required permission.
 6. A terraform backend can be set up in S3 to persist the .tfstate across multiple environments.
 7. Before deleting the project, make sure to `terraform destroy` to remove all the resources and avoid unnecessary costs.
+
+<img src="images/securityGroup.PNG">
