@@ -1,3 +1,7 @@
-variable "access_key" {} // Get the access_key from the user
+variable "access_key" {
+    description = "aws access_key"
+} 
 
-variable "secret_key" {} // Get the secret_key from the user
+variable "secret_key" {
+    description = "aws secret_key"
+} 
