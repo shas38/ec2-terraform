@@ -1,6 +1,6 @@
 # ec2-terraform
 
-This project demonstrates the concept of Infrastructure as Code using Terraform. In this project, we create an EC2 service on AWS and deploy a web application. 
+This project demonstrates the concept of Infrastructure as Code using Terraform. In this project, we provision an EC2 service on AWS and deploy a web application. 
 
 ## Project File Structure
 The project is divided into the following files:
@@ -42,6 +42,7 @@ Instruction for setting up Terraform: https://learn.hashicorp.com/tutorials/terr
 6. Terraform was chosen as it is one of the most popular technology for maintaining infrastructure as Code. Furthermore, Terraform deployments are Idempotent.
 7. A terraform backend can be set up in S3 to persist the .tfstate across multiple environments.
 8. Before deleting the project, make sure to `terraform destroy` to remove all the resources and avoid unnecessary costs.
+9. In this project, I am using an Ubuntu Server 20.04 LTS AMI as it is free. We can easily swap this with another OS. However, we will have to change the commands in the user data accordingly.
 
 <img src="images/securityGroup.PNG">
 
