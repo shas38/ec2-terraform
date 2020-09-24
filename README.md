@@ -39,8 +39,9 @@ Instruction for setting up Terraform: https://learn.hashicorp.com/tutorials/terr
 3. The security group only allows traffic to port 80 and ssh into the server is not permitted. This was done to decrease the attack vector.
 4. All outbound requests are allowed so that the server can install necessary dependencies.
 5. When adding permissions to the IAM user follow the principle of least privilege so that the IAM user only has the required permission.
-6. A terraform backend can be set up in S3 to persist the .tfstate across multiple environments.
-7. Before deleting the project, make sure to `terraform destroy` to remove all the resources and avoid unnecessary costs.
+6. Terraform was chosen as it is one of the most popular technology for maintaining infrastructure as Code. Furthermore, Terraform deployments are Idempotent.
+7. A terraform backend can be set up in S3 to persist the .tfstate across multiple environments.
+8. Before deleting the project, make sure to `terraform destroy` to remove all the resources and avoid unnecessary costs.
 
 <img src="images/securityGroup.PNG">
 
