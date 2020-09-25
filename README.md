@@ -1,6 +1,6 @@
 # ec2-terraform
 
-This project demonstrates the concept of Infrastructure as Code using Terraform. In this project, we provision an EC2 service on AWS and deploy a web application. 
+This project demonstrates the concept of Infrastructure as Code using Terraform. In this project, we provision an EC2 service on AWS and deploy a web application on it. 
 
 ## Project File Structure
 The project is divided into the following files:
