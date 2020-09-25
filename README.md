@@ -5,11 +5,12 @@ This project demonstrates the concept of Infrastructure as Code using Terraform.
 ## Project File Structure
 The project is divided into the following files:
 ```
-- ec2.tf            - EC2 resource declaration along with the user data for deploying the application.
-- outputs.tf        - For outputting the public IP and DNS of the EC2 service.
-- provider.tf       - For setting up AWS connection.
-- sg.tf             - Security group definition.
-- variables.tf      - For prompting the user to enter access_key and secret_key.
+- ec2.tf                        - EC2 resource declaration.
+- outputs.tf                    - For outputting the public IP and DNS of the EC2 service.
+- provider.tf                   - For setting up AWS connection.
+- sg.tf                         - Security group definition.
+- variables.tf                  - For prompting the user to enter access_key and secret_key.
+- templates/ec2/user-data.sh    - The user data commands for deploying the application.
 ```
 
 ## Project Prerequisite
@@ -43,6 +44,8 @@ Instruction for setting up Terraform: https://learn.hashicorp.com/tutorials/terr
 7. A terraform backend can be set up in S3 to persist the .tfstate across multiple environments.
 8. Before deleting the project, make sure to `terraform destroy` to remove all the resources and avoid unnecessary costs.
 9. In this project, I am using an Ubuntu Server 20.04 LTS AMI as it is free. We can easily swap this with another OS. However, we will have to change the commands in the user data accordingly.
+10. ap-southeast-2 region is being used as this is the only region within Australia.
+11. I am passing in the AWS Access Key ID and the Secret access key during runtime for ease of deployment. However, in a production environment, it is recommended either setting up AWS CLI or AWS-vault and getting the keys from there.
 
 <img src="images/securityGroup.PNG">
 
