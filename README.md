@@ -54,3 +54,10 @@ Instruction for setting up Terraform: https://learn.hashicorp.com/tutorials/terr
 
 1. Currently, the application is deployed on a single server with no redundancy. The application can be deployed on multiple servers in multiple availability zones behind an elastic load balancer.
 2. To follow a better DevOps practice, we can set up a CI/CD pipeline using GitLab CI and trigger the deployment every time something new is added to the master branch. That would prevent the need for having to deploy manually.
+
+## FAQ
+
+## Credits
+
+Written by Shahriar Hasan Khan
+Contact: shahriar27@hotmail.com
